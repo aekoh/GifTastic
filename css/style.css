@@ -8,10 +8,27 @@ small {
     text-align: center;
 }
 
-h1 {
-    text-align: center;
-}
-
 form {
     padding-left: 35px;
+}
+
+@font-face {
+    font-family: 'AnglicanText';
+    src: url(font/text2.ttf);
+    font-style: normal;
+}
+
+h1 {
+    text-align: center;
+    font-family: "text2.ttf";
+    padding-bottom: 0%;
+}
+
+label {
+    font-family: "text2.ttf";
+}
+#buttons-view
+{
+    margin-bottom: 0%;
+    
 }

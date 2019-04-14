@@ -21,7 +21,7 @@ form {
 }
 
 h1 {
-    font-family: "text2.ttf";
+   
     padding-bottom: 0%;
     font-weight: bold;
 	font-size: 69px;
@@ -29,6 +29,7 @@ h1 {
     color:white;
     font-size: 25px;
     padding-left: 50px;
+
 }
 
 label {
@@ -73,8 +74,8 @@ small {
 }
 
 .peoples {
-    font-size: 25px;
-    font-weight: 15px;
+    font-size: 70px;
+    font-weight: bold;
     background:orange;
     color:black;
 	border: none;
@@ -92,13 +93,15 @@ small {
 
 #add-people {
 	font-size: 14px;
-	color:white;
-	background: red;
+	color:black;
+	background: palevioletred;
 	border: none;
 	padding: 10px 15px;
 	margin: 6px;
     border-radius: 10px;
     font-size: 25px;
+    font-weight: bold;
+    font-family: "text2.ttf";
 }
 
 #add-people:hover, #add-people:active {
@@ -153,9 +156,10 @@ p {
 }
 
 #inputstyle {
-    font-size: 25px;
-    color: white;
-    font-weight: 70px;
+    font-size: 30px;
+    color: palevioletred;
+    font-weight: bold;
+    font-family: "text2.ttf";
 }
 #people-input {
     font-size: 25px;

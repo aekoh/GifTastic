@@ -19,9 +19,11 @@ form {
 }
 
 h1 {
-    text-align: center;
     font-family: "text2.ttf";
     padding-bottom: 0%;
+    font-weight: bold;
+	font-size: 69px;
+	margin-bottom: 15px;
 }
 
 label {
@@ -31,4 +33,93 @@ label {
 {
     margin-bottom: 0%;
     
+}
+
+
+
+
+body {
+	background: gold;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+
+
+small {
+	font-weight: normal;
+	font-size: 40px;
+}
+
+.wrapper {
+	margin: 60px 0 60px 60px;
+}
+
+.character-button {
+	font-size: 14px;
+	background: lightcoral;
+	border: none;
+	padding: 10px 15px;
+	margin: 6px;
+	border-radius: 10px;
+}
+
+.character-button:hover, .character-button:active {
+	background: darkgoldenrod;
+	color: #fff;
+}
+
+#add-people {
+	font-size: 14px;
+	color: #fff;
+	background: red;
+	border: none;
+	padding: 10px 15px;
+	margin: 6px;
+	border-radius: 10px;
+}
+
+#add-people:hover, #add-people:active {
+	background: red;
+}
+
+.peoples {
+	padding: 10px 15px;
+	font-size: 14px;
+	border: none;
+	border-radius: 10px;
+}
+
+#button-view {
+	margin-right: 20px;
+	margin-bottom: 15px;
+}
+
+.results-container {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.result-container {
+	margin: 30px 30px 0 0;
+}
+
+.result {
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+
+.result:hover {
+	-webkit-box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+	box-shadow:         10px 10px 0px 0px rgba(0, 0, 0, 0.4);
+}
+
+p {
+	font-size: 13px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	margin: 0 0 6px 4px;
 }

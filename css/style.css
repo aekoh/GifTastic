@@ -1,7 +1,7 @@
+html {
+    background-image: url("../images/pic.jpeg");
+    font-family: "text2.ttf";
 
-.form-inline {
-    font-size: 25px;
-    
 }
 
 small {
@@ -10,6 +10,7 @@ small {
 
 form {
     padding-left: 35px;
+    background-image: url("../images/pic.jpeg");
 }
 
 @font-face {
@@ -23,54 +24,56 @@ h1 {
     padding-bottom: 0%;
     font-weight: bold;
 	font-size: 69px;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    color:white;
 }
 
 label {
     font-family: "text2.ttf";
+    color:white;
 }
-#buttons-view
-{
+#buttons-view {
     margin-bottom: 0%;
     
 }
 
 
-
-
 body {
-	background: gold;
-	font-family: Helvetica, Arial, sans-serif;
+    background-image: url("../images/pic.jpeg");
 }
+
+
 
 
 
 small {
 	font-weight: normal;
-	font-size: 40px;
+    font-size: 40px;
 }
 
 .wrapper {
-	margin: 60px 0 60px 60px;
+    margin: 60px 0 60px 60px;
+    background-image: url("../images/pic.jpeg");
 }
 
-.character-button {
+.peoples {
 	font-size: 14px;
-	background: lightcoral;
+	background: lightblue;
 	border: none;
 	padding: 10px 15px;
 	margin: 6px;
-	border-radius: 10px;
+    border-radius: 10px;
+    
 }
 
-.character-button:hover, .character-button:active {
-	background: darkgoldenrod;
+.peoples:hover, .peoples:active {
+	background: darkblue;
 	color: #fff;
 }
 
 #add-people {
 	font-size: 14px;
-	color: #fff;
+	color:white;
 	background: red;
 	border: none;
 	padding: 10px 15px;
@@ -91,23 +94,27 @@ small {
 
 #button-view {
 	margin-right: 20px;
-	margin-bottom: 15px;
+    margin-bottom: 15px;
+    font-family: "text2.ttf";
 }
 
 .results-container {
 	display: flex;
 	flex-wrap: wrap;
-	margin-bottom: 30px;
+    margin-bottom: 30px;
+    background-image: url("../images/pic.jpeg");
 }
 
 .result-container {
-	margin: 30px 30px 0 0;
+    margin: 30px 30px 0 0;
+    background-image: url("../images/pic.jpeg");
 }
 
 .result {
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
-	border-radius: 10px;
+    border-radius: 10px;
+    background-image: url("../images/pic.jpeg");
 }
 
 .result:hover {
@@ -121,5 +128,6 @@ p {
 	font-weight: bold;
 	letter-spacing: 2px;
 	text-transform: uppercase;
-	margin: 0 0 6px 4px;
+    margin: 0 0 6px 4px;
+    font-family: "text2.ttf";
 }

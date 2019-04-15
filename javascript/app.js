@@ -42,6 +42,8 @@ $("#add-people").on("click", function(event) {
 
 // Calling the renderButtons function at least once to display the initial list of characters
 renderButtons();
+
+
 // GIF edits
 
 // Adding click event listen listener to all buttons

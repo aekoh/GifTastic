@@ -54,6 +54,7 @@ $(document).on("click", '.peoples', function() {
   var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
     peopleSearch + "&api_key=dc6zaTOxFJmzC&limit=10";
   // Performing an AJAX request with the queryURL
+  //example note
   $.ajax({
       url: queryURL,
       method: "GET"

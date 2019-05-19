@@ -47,9 +47,10 @@ renderButtons();
 // GIF edits
 
 // Adding click event listen listener to all buttons
-$(document).on("click", '.peoples', function() {
+$(document).on("click", '.peoples',function() {
   // Grabbing and storing the people property value from the button
   var peopleSearch = $(this).attr("data-name");
+
   // Constructing a queryURL using the animal name
   var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     peopleSearch + "&api_key=dc6zaTOxFJmzC&limit=10";
@@ -59,6 +60,8 @@ $(document).on("click", '.peoples', function() {
       url: queryURL,
       method: "GET"
     })
+ 
+
     // After data comes back from the request
     .done(function(response) {
       console.log(queryURL);
@@ -97,6 +100,16 @@ $(document).on("click", '.peoples', function() {
     	$("#gifs-appear-here").prepend(resultsContainerSection);
     });
 });
+
+
+
+// TRIAL AREA
+
+
+
+
+// TRIAL AREA
+
 
 $(document).on("click", ".result", function() {
 	var state = $(this).attr("data-state");

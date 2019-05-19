@@ -51,11 +51,9 @@ $(document).on("click", '.peoples', function() {
   // Grabbing and storing the people property value from the button
   var peopleSearch = $(this).attr("data-name");
   // Constructing a queryURL using the animal name
-<<<<<<< HEAD
+
   var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' +
-=======
-  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
->>>>>>> eaadf245997ef8c1645327e3663a43423528d6cc
+
     peopleSearch + "&api_key=dc6zaTOxFJmzC&limit=10";
   // Performing an AJAX request with the queryURL
   //example note

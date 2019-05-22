@@ -46,23 +46,37 @@ renderButtons();
 
 // GIF edits
 
+
 // Adding click event listen listener to all buttons
 $(document).on("click", '.peoples', function() {
   // Grabbing and storing the people property value from the button
   var peopleSearch = $(this).attr("data-name");
   // Constructing a queryURL using the animal name
+
+  // CORS
+  var originalURL = 'https://api.giphy.com/v1/gifs/search?q=';
+  var queryURL = "https://cors-anywhere.herokuapp.com/" + originalURL
+
+
+
   var queryURL = 'https://api.giphy.com/v1/gifs/search?q=' +
     peopleSearch + "&api_key=dc6zaTOxFJmzC&limit=10";
   // Performing an AJAX request with the queryURL
   //example note
   $.ajax({
       url: queryURL,
-      method: "GET"
+      method: "GET",
+
+      headers: {
+        "x-requested-with": "xhr" 
+      }
     })
     // After data comes back from the request
     .done(function(response) {
       console.log(queryURL);
-      console.log(response);
+      console.log('CORS anywhere response', response);
+
+
       // storing the data from the AJAX request in the results variable
       var results = response.data;
 

@@ -59,24 +59,18 @@ $(document).on("click", ".peoples", function() {
   // Grabbing and storing the people property value from the button
   var peopleSearch = $(this).attr("data-name");
   // Constructing a queryURL using the animal name
-  console.log(peopleSearch);
+  console.log(`Searching for ${peopleSearch}`);
   // CORS
-  var queryURL =
-    "https://api.giphy.com/v1/gifs/search?q=" +
-    peopleSearch +
-    "&api_key=dc6zaTOxFJmzC&limit=10";
-
+  var queryURL = `https://api.giphy.com/v1/gifs/search?q="${peopleSearch}&api_key=dc6zaTOxFJmzC&limit=10`;
 
   //example note
   $.ajax({
     url: queryURL,
-    method: "GET",
-
+    method: "GET"
   })
     // After data comes back from the request
-    .done(function(response) {
-      console.log(queryURL);
-      
+    .then(function(response) {
+      console.log(`Searching for ${queryURL}`);
 
       // storing the data from the AJAX request in the results variable
       var results = response.data;

@@ -58,31 +58,30 @@ renderButtons();
 $(document).on("click", ".peoples", function() {
   // Grabbing and storing the people property value from the button
   var peopleSearch = $(this).attr("data-name");
+  var apiKey = "";
   // Constructing a queryURL using the animal name
-  console.log(peopleSearch);
+  console.log(`Searching for ${peopleSearch}`);
   // CORS
-  var queryURL =
-    "https://api.giphy.com/v1/gifs/search?q=" +
-    peopleSearch +
-    "&api_key=dc6zaTOxFJmzC&limit=10";
+  var queryURL = `https://cors.io/?https://api.giphy.com/v1/gifs/search?q="${peopleSearch}&api_key=${apiKey}&limit=10`;
 
-
-  //example note
   $.ajax({
     url: queryURL,
     method: "GET",
-
+    dataType: "json",
+    // this headers section is necessary for CORS-anywhere
+    headers: {
+      "Access-Control-Allow-Credentials": true,
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET",
+      "Access-Control-Allow-Headers": "application/json"
+    }
   })
-    // After data comes back from the request
-    .done(function(response) {
-      console.log(queryURL);
-      
-
+    .then(response => {
+      console.log(`Searching for ${queryURL}`);
+      console.log(response);
       // storing the data from the AJAX request in the results variable
       var results = response.data;
-
       var resultsContainerSection = $("<section class='results-container'>");
-
       // Looping through each result item
       for (var i = 0; i < results.length; i++) {
         var singleResultDiv = $("<div class='result-container'>");
@@ -106,6 +105,9 @@ $(document).on("click", ".peoples", function() {
       }
 
       $("#gifs-appear-here").prepend(resultsContainerSection);
+    })
+    .catch(err => {
+      console.error(err);
     });
 });
 

@@ -72,9 +72,6 @@ $(document).on("click", ".peoples", function() {
     url: queryURL,
     method: "GET",
 
-    headers: {
-      "x-requested-with": "xhr"
-    }
   })
     // After data comes back from the request
     .done(function(response) {

@@ -58,7 +58,7 @@ renderButtons();
 $(document).on("click", ".peoples", function() {
   // Grabbing and storing the people property value from the button
   var peopleSearch = $(this).attr("data-name");
-  var apiKey = "";
+  var apiKey = "UJkTyJ7fNSYO8V4YRMWwsz8Zs4biNP3R";
   // Constructing a queryURL using the animal name
   console.log(`Searching for ${peopleSearch}`);
   // CORS
